@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='tmp',
+    name='data_upload',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
