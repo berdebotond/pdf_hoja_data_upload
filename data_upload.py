@@ -1,12 +1,7 @@
-import sys
-
-import uuid
-
-import fitz  # PyMuPDF
-from supabase import create_client, Client
 import os
-from country_name_translator import translate_countries_from_en_es
 
+from supabase import create_client, Client
+from PIL import Image
 # Initialize Supabase client
 url: str = os.environ.get("SUPABASE_URL", "https://hetrvidiwvkrxaqeozgc.supabase.co")
 key: str = os.environ.get("SUPABASE_KEY",
@@ -507,7 +502,7 @@ def main():
         application_path = os.path.dirname(os.path.abspath(__file__))
 
     # Define the folder for input PDFs
-    input_pdfs_folder = os.path.join(application_path, 'test2')
+    input_pdfs_folder = os.path.join(application_path, 'input_pdfs')
 
     # Process PDFs in the input_pdfs folder
     process_pdfs(input_pdfs_folder)
@@ -517,8 +512,6 @@ if __name__ == "__main__":
     main()
 import sys
 
-import uuid
-
 import fitz  # PyMuPDF
 from supabase import create_client, Client
 import os
@@ -1024,7 +1017,7 @@ def main():
         application_path = os.path.dirname(os.path.abspath(__file__))
 
     # Define the folder for input PDFs
-    input_pdfs_folder = os.path.join(application_path, 'test2')
+    input_pdfs_folder = os.path.join(application_path, 'input_pdfs')
 
     # Process PDFs in the input_pdfs folder
     process_pdfs(input_pdfs_folder)

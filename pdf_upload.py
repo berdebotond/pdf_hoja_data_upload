@@ -352,4 +352,4 @@ def process_pdfs(folder_path):
 
 
 # Run the process
-process_pdfs('/Users/botondberde/research/pdf_fix_jonna/pdfs_to_db/test/')
+process_pdfs('/Users/botondberde/research/pdf_fix_jonna/pdfs_to_db/input_pdfs/')
